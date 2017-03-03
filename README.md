@@ -182,7 +182,7 @@ Note: All curls must be sent with the headers as well (the only exception is tha
 </ul>
 
 ### Config File
-<h3> <strong> facebook_access_token and fb_user_id </strong></h3>
+<h5> <strong> facebook_access_token and fb_user_id </strong></h5>
 
 Very simple now. Just input your facebook username/email and password in your config file. Then, the fb_auth_token.py module will programmatically retrieve your facebook_access_token and fb_user_id. These are then used to generate your tinder_auth_token in tinder_api.py! Happy Swiping!
 <br>
