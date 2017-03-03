@@ -9,3 +9,7 @@ Before pressing the 'OK' button, open up the Developer Tools for your browser an
 This should cause the 'Network' section to show a 'name' beginning with 'confirm?dpr=2' as seen in the photo below. Click on this and also click on the 'Response' tab. This should look similar to how it does in the picture below. If you Command + F for 'access_token', it should lead you to a portion of the response that reads 'access_token=EJOFIJ...OAIEJI&expires'. Copy and paste everything from access_token= to the &. This is the facebook_token that you should place in your config file. This particular token will only last about an hour or two so just keep that in mind.
 
 <img src='https://github.com/fbessez/Tinder/blob/master/AuthPhotos/auth2.png' alt='Auth2' style="width:128px;height:128px;"> 
+
+
+### How to get facebook_id
+This one is much simpler. Visit <a href='http://findmyfbid.com/'> this </a> website and it should be pretty simple. Simply paste in the url to your Facebook timeline and it should return your correct facebook_id. Copy and Paste this value into your config file. 

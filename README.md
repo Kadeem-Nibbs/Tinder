@@ -181,14 +181,12 @@ Note: All curls must be sent with the headers as well (the only exception is tha
 	<li> robobrowser </li> 
 </ul>
 
+### Config File
+<h3> <strong> facebook_access_token and fb_user_id </strong></h3>
 
-
-### How to get facebook_token
-
-<strong> EDIT: </strong> With the help of <a href=https://github.com/philipperemy/Deep-Learning-Tinder/blob/master/tinder_token.py> philliperemy </a>, I have included a programatic way to acquire your facebook_token. Now, in your config.py just input your facebook username and password as paramaters to the get_fb_access_token function.
+Very simple now. Just input your facebook username/email and password in your config file. Then, the fb_auth_token.py module will programmatically retrieve your facebook_access_token and fb_user_id. These are then used to generate your tinder_auth_token in tinder_api.py! Happy Swiping!
 <br>
 
-<strong> ** </strong> To see the non-programmatic way to get your facebook_access_token, visit <a href=https://github.com/fbessez/Tinder/blob/master/AuthPhotos/README.md> this README </a> and follow the instructions! <strong> ** </strong> 
+<strong> ** </strong> To see the non-programmatic way to get your facebook_access_token and facebook_id, visit <a href=https://github.com/fbessez/Tinder/blob/master/AuthPhotos/README.md> this README </a> and follow the instructions! <strong> ** </strong> 
 
-### How to get facebook_id
-This one is much simpler. Visit <a href='http://findmyfbid.com/'> this </a> website and it should be pretty simple. Simply paste in the url to your Facebook timeline and it should return your correct facebook_id. Copy and Paste this value into your config file. 
+<strong> Note: </strong> With the help of <a href=https://github.com/philipperemy/Deep-Learning-Tinder/blob/master/tinder_token.py> philliperemy </a>, I have included a programatic way to acquire your facebook_token. Now, in your config.py just input your facebook username and password as paramaters to the get_fb_access_token function.

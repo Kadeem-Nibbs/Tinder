@@ -1,12 +1,13 @@
 from datetime import date, timedelta, datetime
 from threading import Thread
+import time
 import tinder_api as api
 
 ### GLOBALS:
 match_info = {}
 
 '''
-Currently, I do not support anything for groups!
+Currently, I do not support anything for groups
 
 >>> b.keys() when b = my_group
 dict_keys(['my_group', 'closed', 'owner', 'update_time', 
@@ -127,6 +128,10 @@ class MyThread(Thread):
 
 matchthread = MyThread(0)
 matchthread.start()
+print("Gathering data on your matches...")
+while match_info == {}:
+	print("...")
+	time.sleep(2)
 
 
 
