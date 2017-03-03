@@ -42,7 +42,7 @@ def get_auth_token(fb_auth_token, fb_user_id):
 		return {"error": "could not authorize"}
 
 print("Getting your Auth Token...")
-tinder_auth_token = get_auth_token(config.fb_auth_token, config.fb_user_id)
+tinder_auth_token = get_auth_token(config.fb_access_token, config.fb_user_id)
 if "error" in tinder_auth_token: 
 	print("Something went wrong!")
 else:
